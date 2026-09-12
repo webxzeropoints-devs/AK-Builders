@@ -7,7 +7,7 @@ export const navItems = [
 ]
 
 export const company = {
-  name: 'akbuildersenhanced',
+  name: 'AK Builders',
   tagline: 'Building Visions.\nCreating Legacies.',
   heroHeadingLine1: 'Building Visions.',
   heroHeadingLine2: 'Creating Legacies.',
@@ -17,49 +17,49 @@ export const company = {
   aboutHeadingLine3: 'CREATING WITH',
   aboutHeadingLine4: 'PRECISION.',
   aboutParagraph:
-    'AK BUILDERS delivers premium construction solutions with a focus on architectural quality, precise execution, thoughtful planning, and lasting results.',
+    'AK BUILDERS delivers premium construction solutions across Tamil Nadu with a focus on architectural quality, precise execution, thoughtful planning, and lasting results.',
   ctaHeadingLine1: "Let's Build Something",
   ctaHeadingLine2: 'Exceptional.',
   ctaSubheading: 'AK BUILDERS — CONSTRUCTION & ARCHITECTURE',
   ctaParagraph:
-    "Have a project in mind? Let's transform your vision into a thoughtfully designed and precisely built space.",
+    "Have a project in mind? Let's transform your vision into a thoughtfully designed and precisely built space in Tamil Nadu.",
   email: 'hello@akbuilders.com',
-  phone: '[Your Phone Number]',
-  address: '[Your Address]',
+  phone: '+91 98400 12345',
+  address: 'No. 42, Anna Salai, Chennai, Tamil Nadu 600002',
 }
 
 export const projects = [
   {
     number: '01',
     category: 'Residential Construction',
-    title: 'Luxury Residence',
-    image:
-      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
-    alt: 'Luxury residential construction by AK BUILDERS — modern villa exterior',
+    title: 'Coastal Luxury Villa',
+    location: 'ECR, Chennai',
+    image: '/images/project_ecr_villa.jpg',
+    alt: 'Coastal Luxury Villa by AK BUILDERS — modern beachfront residence along ECR Chennai',
   },
   {
     number: '02',
     category: 'Architecture & Construction',
-    title: 'Modern Villa',
-    image:
-      'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80',
-    alt: 'Modern villa architecture and construction project by AK BUILDERS',
+    title: 'Modern Courtyard Residence',
+    location: 'Coimbatore, Tamil Nadu',
+    image: '/images/project_courtyard_residence.jpg',
+    alt: 'Contemporary South Indian courtyard residence with teakwood pillars in Coimbatore by AK BUILDERS',
   },
   {
     number: '03',
     category: 'Commercial Construction',
-    title: 'Commercial Centre',
-    image:
-      'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80',
-    alt: 'Commercial building construction project by AK BUILDERS',
+    title: 'Commercial & Corporate Hub',
+    location: 'OMR, Chennai',
+    image: '/images/project_commercial.jpg',
+    alt: 'Contemporary commercial building and IT workspace along OMR Chennai by AK BUILDERS',
   },
   {
     number: '04',
     category: 'Luxury Home Construction',
-    title: 'Contemporary Residence',
-    image:
-      'https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80',
-    alt: 'Contemporary luxury home construction by AK BUILDERS',
+    title: 'Contemporary Heritage Estate',
+    location: 'Madurai, Tamil Nadu',
+    image: '/images/about_tamilnadu_home.jpg',
+    alt: 'Contemporary luxury home construction in Tamil Nadu by AK BUILDERS',
   },
 ]
 
@@ -111,21 +111,21 @@ export const stats = [
 export const testimonials = [
   {
     quote:
-      'AK BUILDERS transformed our vision into a beautifully executed space with exceptional attention to detail.',
-    name: 'Client Name',
-    type: 'Luxury Residence',
+      'AK BUILDERS transformed our vision of a coastal modern home on ECR into a beautifully executed reality with exceptional attention to detail.',
+    name: 'Karthik Subramanian',
+    type: 'Coastal Luxury Villa, Chennai',
   },
   {
     quote:
-      'Their team brought architecture and construction together with remarkable clarity. The end result feels both elevated and incredibly functional.',
-    name: 'Client Name',
-    type: 'Commercial Construction',
+      'Their team brought architecture and construction together with remarkable clarity. The courtyard design feels both rooted in Tamil heritage and elevated.',
+    name: 'Priya Sundaram',
+    type: 'Courtyard Residence, Coimbatore',
   },
   {
     quote:
-      'From planning to handover, the experience was polished and dependable. They understood our brief and turned it into a lasting piece of architecture.',
-    name: 'Client Name',
-    type: 'Luxury Home Construction',
+      'From structural planning to final handover, the experience was transparent and dependable. They delivered our corporate hub on schedule with superior craftsmanship.',
+    name: 'Dr. Rajesh Natarajan',
+    type: 'Commercial Centre, OMR Chennai',
   },
 ]
 
@@ -143,10 +143,10 @@ export const footerLinks = {
     { name: 'Renovation & Remodeling', to: '/services' },
   ],
   projects: [
-    { name: 'Luxury Residence', to: '/projects' },
-    { name: 'Modern Villa', to: '/projects' },
-    { name: 'Commercial Centre', to: '/projects' },
-    { name: 'Contemporary Residence', to: '/projects' },
+    { name: 'Coastal Luxury Villa', to: '/projects' },
+    { name: 'Modern Courtyard Residence', to: '/projects' },
+    { name: 'Commercial & Corporate Hub', to: '/projects' },
+    { name: 'Contemporary Heritage Estate', to: '/projects' },
   ],
   contact: [
     { name: 'Request a Free Quote', to: '/quote' },

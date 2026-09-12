@@ -49,11 +49,11 @@ function ContactPage() {
               </div>
               <div>
                 <p className="text-xs uppercase tracking-[0.2em] text-[#C7A96B] mb-2">Phone</p>
-                <p className="text-[#FAF7F0]">+1 (555) 123-4567</p>
+                <p className="text-[#FAF7F0]">+91 98400 12345</p>
               </div>
               <div>
                 <p className="text-xs uppercase tracking-[0.2em] text-[#C7A96B] mb-2">Location</p>
-                <p className="text-[#FAF7F0]">Your city or project location</p>
+                <p className="text-[#FAF7F0]">Chennai & across Tamil Nadu</p>
               </div>
             </div>
           </div>
@@ -118,7 +118,7 @@ function ContactPage() {
                       value={formData.phone}
                       onChange={handleChange}
                       required
-                      placeholder="+1 (555) 123-4567"
+                      placeholder="+91 98400 12345"
                       className="w-full rounded-xl border border-[#d7cdb7] bg-white px-4 py-3 text-[#252321] placeholder:text-[#8a857f] focus:border-[#C7A96B] focus:outline-none"
                     />
                   </div>
@@ -174,10 +174,11 @@ function ContactPage() {
                       className="w-full rounded-xl border border-[#d7cdb7] bg-white px-4 py-3 text-[#252321] focus:border-[#C7A96B] focus:outline-none"
                     >
                       <option value="">Select a budget range</option>
-                      <option value="$50k - $100k">$50k - $100k</option>
-                      <option value="$100k - $250k">$100k - $250k</option>
-                      <option value="$250k - $500k">$250k - $500k</option>
-                      <option value="$500k+">$500k+</option>
+                      <option value="₹25 Lakhs - ₹50 Lakhs">₹25 Lakhs - ₹50 Lakhs</option>
+                      <option value="₹50 Lakhs - ₹1 Crore">₹50 Lakhs - ₹1 Crore</option>
+                      <option value="₹1 Crore - ₹2.5 Crores">₹1 Crore - ₹2.5 Crores</option>
+                      <option value="₹2.5 Crores - ₹5 Crores">₹2.5 Crores - ₹5 Crores</option>
+                      <option value="₹5 Crores+">₹5 Crores+</option>
                     </select>
                   </div>
                 </div>

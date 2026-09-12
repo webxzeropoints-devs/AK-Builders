@@ -78,8 +78,8 @@ export default function ProjectCarousel() {
               number={`0${index + 1}`}
               category={project.category || "RESIDENTIAL"}
               title={project.title || "Project Title"}
-              image={project.image || "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80"}
-              alt={project.title}
+              image={project.image || "/images/project_ecr_villa.jpg"}
+              alt={project.alt || project.title}
             />
           ))}
         </motion.div>

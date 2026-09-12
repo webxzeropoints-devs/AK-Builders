@@ -6,9 +6,9 @@ import { testimonials } from '../data/siteData';
 const Testimonials = () => {
   // Fallback data in case testimonials array is empty or undefined
   const defaultTestimonials = [
-    { name: "James Carter", projectType: "Custom Home Build", quote: "AK Builders delivered beyond our expectations. The attention to detail and craftsmanship are truly exceptional." },
-    { name: "Sarah Williams", projectType: "Commercial Renovation", quote: "A seamless process from start to finish. Their architectural team captured our vision perfectly." },
-    { name: "Michael Chen", projectType: "Luxury Villa", quote: "Professional, punctual, and highly skilled. They transformed our abstract ideas into a stunning reality." }
+    { name: "Karthik Subramanian", projectType: "Coastal Luxury Villa, Chennai", quote: "AK Builders delivered beyond our expectations. The attention to detail and craftsmanship on our ECR villa are truly exceptional." },
+    { name: "Priya Sundaram", projectType: "Courtyard Residence, Coimbatore", quote: "A seamless process from start to finish. Their architectural team captured the traditional Tamil mutram courtyard vision perfectly." },
+    { name: "Dr. Rajesh Natarajan", projectType: "Commercial Centre, OMR Chennai", quote: "Professional, punctual, and highly skilled. They delivered our corporate hub on schedule with superior craftsmanship." }
   ];
 
   const dataToUse = testimonials && testimonials.length > 0 ? testimonials : defaultTestimonials;

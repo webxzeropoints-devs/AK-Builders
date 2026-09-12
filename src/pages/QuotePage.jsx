@@ -10,7 +10,7 @@ import {
   Hammer,
   Key,
   Calendar,
-  DollarSign,
+  IndianRupee,
   MapPin,
   Clock,
   ShieldCheck,
@@ -29,7 +29,7 @@ const initialFormData = {
   propertyType: 'Luxury Villa / Single Family',
   projectArea: '',
   location: '',
-  budgetRange: '$500,000 - $1,000,000',
+  budgetRange: '₹50 Lakhs - ₹1 Crore',
   siteStatus: 'Have Land, Ready to Build',
   timeline: '1 - 3 months',
   architecturalStyle: 'Modern Luxury',
@@ -45,11 +45,11 @@ const projectTypes = [
 ];
 
 const budgetOptions = [
-  '$100,000 - $250,000',
-  '$250,000 - $500,000',
-  '$500,000 - $1,000,000',
-  '$1,000,000 - $2,500,000',
-  '$2,500,000+',
+  '₹25 Lakhs - ₹50 Lakhs',
+  '₹50 Lakhs - ₹1 Crore',
+  '₹1 Crore - ₹2.5 Crores',
+  '₹2.5 Crores - ₹5 Crores',
+  '₹5 Crores+',
 ];
 
 const timelineOptions = [
@@ -289,7 +289,7 @@ export default function QuotePage() {
                           value={formData.location}
                           onChange={handleChange}
                           required
-                          placeholder="City, State, or Zip"
+                          placeholder="e.g. Chennai, Coimbatore, Madurai, TN"
                           className="w-full rounded-xl border border-[#DED4C1] bg-white px-4 py-3 text-sm text-[#252321] placeholder:text-[#9A958E] focus:border-[#C7A96B] focus:outline-none pr-10"
                         />
                         <MapPin className="w-4 h-4 text-[#77736C] absolute right-3.5 top-3.5 pointer-events-none" />
@@ -345,7 +345,7 @@ export default function QuotePage() {
                             </option>
                           ))}
                         </select>
-                        <DollarSign className="w-4 h-4 text-[#77736C] absolute right-3.5 top-3.5 pointer-events-none" />
+                        <IndianRupee className="w-4 h-4 text-[#77736C] absolute right-3.5 top-3.5 pointer-events-none" />
                       </div>
                     </div>
 
@@ -424,7 +424,7 @@ export default function QuotePage() {
                         value={formData.phone}
                         onChange={handleChange}
                         required
-                        placeholder="+1 (555) 000-0000"
+                        placeholder="+91 98400 00000"
                         className="w-full rounded-xl border border-[#DED4C1] bg-white px-4 py-3 text-sm text-[#252321] placeholder:text-[#9A958E] focus:border-[#C7A96B] focus:outline-none"
                       />
                     </div>

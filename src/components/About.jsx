@@ -101,8 +101,8 @@ const About = () => {
                 whileInView={{ scale: 1 }}
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 1.2, delay: 0.2, ease: 'easeOut' }}
-                src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=800&q=80"
-                alt="Premium architectural building by AK BUILDERS"
+                src="/images/about_tamilnadu_home.jpg"
+                alt="Contemporary luxury home construction in Tamil Nadu by AK BUILDERS"
                 className="w-full h-full object-cover"
               />
             </motion.div>

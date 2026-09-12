@@ -25,8 +25,8 @@ const Hero = () => {
           initial={{ scale: 1.08, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 1.1, ease: "easeOut" }}
-          src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80"
-          alt="AK Builders Architecture"
+          src="/images/hero_tamilnadu_villa.jpg"
+          alt="AK Builders Luxury Architecture — Contemporary Tamil Nadu Villa"
           className="w-full h-full object-cover"
         />
         {/* Dark overlay gradient */}

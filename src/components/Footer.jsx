@@ -59,8 +59,8 @@ const Footer = () => {
           {/* Logo & Tagline Column */}
           <motion.div variants={itemVariants} className="md:col-span-4 lg:col-span-4">
             <img
-              src="/AKBuildersEnhanced.png"
-              alt="AKBuildersEnhanced logo"
+              src="/AKBuilders.png"
+              alt="AK Builders logo"
               className="h-28 w-auto object-contain mb-4"
             />
             <p className="text-[#252321] text-2xl font-medium tracking-[0.08em] uppercase">

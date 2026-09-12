@@ -93,7 +93,7 @@ const Navbar = () => {
               aria-label="AK BUILDERS home"
             >
               <img
-                src="/AKBuildersEnhanced.png"
+                src="/AKBuilders.png"
                 alt="AK BUILDERS logo"
                 className="h-16 w-auto object-contain md:h-20"
               />

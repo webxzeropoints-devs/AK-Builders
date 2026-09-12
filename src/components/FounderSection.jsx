@@ -15,8 +15,8 @@ const FounderSection = () => {
           >
             <div className="relative overflow-hidden rounded-[2rem] shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80"
-                alt="Founder portrait"
+                src="/images/founder.jpg"
+                alt="Founder portrait - AK Builders"
                 className="w-full h-[520px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#171716]/60 via-transparent to-transparent" />
@@ -39,7 +39,7 @@ const FounderSection = () => {
             </h2>
 
             <p className="text-base lg:text-lg text-[#77736C] leading-relaxed mb-8">
-              At AKBuildersEnhanced, we believe every construction project should feel personal,
+              At AK Builders, we believe every construction project should feel personal,
               transparent, and expertly delivered. Our founder brings hands-on leadership,
               clear communication, and a strong commitment to quality from the first sketch to
               the final handover.
@@ -62,7 +62,7 @@ const FounderSection = () => {
                 and thrive in.”
               </p>
               <p className="mt-4 text-sm uppercase tracking-[0.2em] text-[#77736C]">
-                Founder, AKBuildersEnhanced
+                Founder, AK Builders
               </p>
             </div>
           </motion.div>
