@@ -82,7 +82,7 @@ const Footer = () => {
   return (
     <footer className="w-full bg-[#F5F0E6] pt-16 lg:pt-20 pb-8 px-4 sm:px-6 lg:px-8 border-t border-[#DED4C1]/60">
       <div className="max-w-7xl mx-auto">
-        <motion.div 
+        <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -198,7 +198,7 @@ const Footer = () => {
         </motion.div>
 
         {/* Bottom Bar */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
