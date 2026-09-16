@@ -17,7 +17,7 @@ const FounderSection = () => {
               <img
                 src="/images/founder.jpg"
                 alt="Founder portrait - AK Builders"
-                className="w-full h-[520px] object-cover"
+                className="w-full aspect-[3/4] object-cover object-top"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#171716]/60 via-transparent to-transparent" />
             </div>
