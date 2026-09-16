@@ -7,7 +7,15 @@ function AboutPage() {
     <>
       <About />
       <Statistics />
-      <FeatureCard />
+      <FeatureCard
+        title={"Heritage &\nCraftsmanship"}
+        badgeTitle="Authentic Mutram"
+        badgeSubtitle="Modern South Indian Architecture"
+        icons={['drafting', 'compass']}
+        comment="AK BUILDERS captured the traditional Tamil courtyard vision with modern luxury. The attention to natural light, teakwood columns, and seamless spatial flow is unmatched."
+        author="Priya Sundaram"
+        location="Courtyard Residence, Coimbatore"
+      />
     </>
   )
 }

@@ -40,7 +40,7 @@ const Testimonials = () => {
               </div>
               
               <p className="text-base leading-relaxed text-[#252321] flex-grow mb-8">
-                "{item.quote}"
+                {item.quote}
               </p>
               
               <div className="border-t border-[#DED4C1] pt-6 mt-auto">

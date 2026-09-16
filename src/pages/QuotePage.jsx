@@ -424,7 +424,7 @@ export default function QuotePage() {
                         value={formData.phone}
                         onChange={handleChange}
                         required
-                        placeholder="+91 98400 00000"
+                        placeholder="+91 63802 24982"
                         className="w-full rounded-xl border border-[#DED4C1] bg-white px-4 py-3 text-sm text-[#252321] placeholder:text-[#9A958E] focus:border-[#C7A96B] focus:outline-none"
                       />
                     </div>

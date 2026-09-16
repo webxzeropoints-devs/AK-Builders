@@ -199,7 +199,7 @@ export default function PrivacyPolicyPage() {
           </p>
 
           <div className="mt-6 flex flex-wrap items-center justify-center gap-4 text-xs tracking-wider text-[#77736C]">
-            <span>LAST UPDATED: SEPTEMBER 2025</span>
+            <span>LAST UPDATED: SEPTEMBER 2026</span>
             <span>•</span>
             <Link
               to="/terms"

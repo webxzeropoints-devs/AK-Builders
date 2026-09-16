@@ -1,13 +1,13 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { motion, useInView, animate } from 'framer-motion';
 
-const Counter = ({ value, suffix = "", duration = 1.5 }) => {
+const Counter = ({ value, suffix = "", prefix = "", duration = 1.5 }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-50px" });
   const [displayValue, setDisplayValue] = useState(0);
 
   useEffect(() => {
-    if (isInView) {
+    if (isInView && typeof value === 'number') {
       const controls = animate(0, value, {
         duration,
         ease: "easeOut",
@@ -17,8 +17,13 @@ const Counter = ({ value, suffix = "", duration = 1.5 }) => {
     }
   }, [isInView, value, duration]);
 
+  if (typeof value === 'string') {
+    return <span>{value}</span>;
+  }
+
   return (
     <span ref={ref}>
+      {prefix}
       {displayValue}
       {suffix}
     </span>
@@ -27,9 +32,9 @@ const Counter = ({ value, suffix = "", duration = 1.5 }) => {
 
 const Statistics = () => {
   const statItems = [
-    { label: "Years Experience", value: 10, suffix: "+" },
-    { label: "Projects Completed", value: 100, suffix: "+" },
-    { label: "Happy Clients", value: 50, suffix: "+" },
+    { label: "Established & Operating", value: 2020, prefix: "From " },
+    { label: "Projects Completed", value: 40, suffix: "+" },
+    { label: "Happy Clients", value: 40, suffix: "+" },
     { label: "Commitment", value: 100, suffix: "%" }
   ];
 
@@ -64,7 +69,7 @@ const Statistics = () => {
             Project Statistics
           </p>
           <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-[#FAF7F0] mb-16 lg:mb-24">
-            Project Statistics
+            Building Excellence Since 2020
           </h2>
         </motion.div>
 
@@ -72,12 +77,12 @@ const Statistics = () => {
           {statItems.map((item, index) => (
             <div 
               key={index}
-              className={`relative flex flex-col items-center justify-center ${
+              className={`relative flex flex-col items-center justify-center px-4 ${
                 index !== statItems.length - 1 ? 'lg:border-r lg:border-white/10' : ''
               }`}
             >
-              <div className="font-serif text-5xl md:text-6xl lg:text-7xl text-[#C7A96B] mb-4 tracking-tight">
-                <Counter value={item.value} suffix={item.suffix} />
+              <div className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#C7A96B] mb-4 tracking-tight whitespace-nowrap">
+                <Counter value={item.value} suffix={item.suffix} prefix={item.prefix} />
               </div>
               <p className="text-xs uppercase tracking-[0.15em] text-[#FAF7F0]/80">
                 {item.label}

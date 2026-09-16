@@ -11,7 +11,7 @@ const LoadingScreen = () => {
     const timer = setTimeout(() => {
       setIsLoading(false);
       sessionStorage.setItem('ak_builders_loaded', 'true');
-    }, 2000);
+    }, 2200);
 
     return () => clearTimeout(timer);
   }, []);
@@ -26,22 +26,34 @@ const LoadingScreen = () => {
           className="fixed inset-0 z-[120] flex flex-col items-center justify-center bg-[#171716]"
         >
           <motion.div
-            initial={{ scale: 0.95, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="flex flex-col items-center"
+            initial={{ scale: 0.92, opacity: 0, y: 15 }}
+            animate={{ scale: 1, opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, ease: "easeOut" }}
+            className="flex flex-col items-center px-6 text-center"
           >
-            <h1 className="text-4xl md:text-5xl font-serif text-[#FAF7F0] tracking-[0.2em] mb-4 uppercase">
-              AK Builders
-            </h1>
-            <p className="text-sm md:text-base font-sans text-[#C7A96B] tracking-widest uppercase mb-6 opacity-80">
+            <motion.img
+              src="/images/ak-logo.png"
+              alt="AK BUILDERS"
+              className="h-24 sm:h-28 md:h-32 w-auto object-contain mb-6 drop-shadow-[0_10px_30px_rgba(199,169,107,0.25)]"
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+            />
+
+            <motion.p
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
+              className="text-xs sm:text-sm font-sans text-[#C7A96B] tracking-[0.28em] uppercase mb-6"
+            >
               Building Visions. Creating Legacies.
-            </p>
+            </motion.p>
+
             <motion.div
               initial={{ width: 0 }}
-              animate={{ width: 120 }}
-              transition={{ duration: 1, delay: 0.5, ease: "easeInOut" }}
-              className="h-[1px] bg-[#C7A96B]"
+              animate={{ width: 140 }}
+              transition={{ duration: 1.1, delay: 0.4, ease: "easeInOut" }}
+              className="h-[1.5px] bg-gradient-to-r from-transparent via-[#C7A96B] to-transparent"
             />
           </motion.div>
         </motion.div>

@@ -72,30 +72,26 @@ const Navbar = () => {
         animate={{
           y: isVisible ? 0 : -120,
           opacity: isVisible ? 1 : 0,
-          backgroundColor: isHomePage ? 'rgba(17, 17, 15, 0)' : 'rgba(37, 35, 33, 1)',
+          backgroundColor: isHomePage ? 'rgba(17, 17, 15, 0.3)' : 'rgba(37, 35, 33, 0.95)',
           borderBottom: isHomePage
-            ? '1px solid rgba(255,255,255,0)'
+            ? '1px solid rgba(255,255,255,0.08)'
             : '1px solid rgba(245, 240, 230, 0.15)',
-          backdropFilter: isHomePage ? 'blur(0px)' : 'blur(10px)',
+          backdropFilter: 'blur(12px)',
         }}
         transition={{ duration: 0.25, ease: 'easeOut' }}
         className="fixed top-0 left-0 right-0 z-50 w-full text-[#F5F0E6]"
       >
-        <div
-          className={`max-w-[1600px] mx-auto ${
-            isHomePage ? 'px-6 md:px-12 pt-6 pb-5' : 'px-6 md:px-12 py-4'
-          }`}
-        >
+        <div className="max-w-[1600px] mx-auto px-6 md:px-12 py-3.5 md:py-4">
           <div className="flex items-center justify-between gap-6">
             <Link
               to="/"
-              className="inline-flex items-center justify-center"
+              className="inline-flex items-center justify-center transition-transform hover:scale-[1.02]"
               aria-label="AK BUILDERS home"
             >
               <img
-                src="/AKBuilders.png"
-                alt="AK BUILDERS logo"
-                className="h-16 w-auto object-contain md:h-20"
+                src="/images/ak-logo.png"
+                alt="AK BUILDERS"
+                className="h-14 sm:h-16 md:h-18 w-auto object-contain"
               />
             </Link>
 
@@ -105,7 +101,7 @@ const Navbar = () => {
                   <Link
                     key={item.label}
                     to={item.to}
-                    className="text-[0.7rem] uppercase tracking-[0.22em] font-medium text-[#F5F0E6] hover:text-[#C7A96B] transition-colors duration-300"
+                    className="text-[0.72rem] uppercase tracking-[0.22em] font-medium text-[#F5F0E6] hover:text-[#C7A96B] transition-colors duration-300"
                   >
                     {item.label}
                   </Link>
@@ -133,10 +129,10 @@ const Navbar = () => {
               </Link>
               <button
                 onClick={() => setIsMobileMenuOpen(true)}
-                className="text-[#F5F0E6] hover:text-[#C7A96B] transition-colors"
+                className="text-[#F5F0E6] hover:text-[#C7A96B] transition-colors p-1"
                 aria-label="Open menu"
               >
-                <Menu size={24} strokeWidth={1.5} />
+                <Menu size={26} strokeWidth={1.5} />
               </button>
             </div>
           </div>
@@ -161,6 +157,12 @@ const Navbar = () => {
             </button>
 
             <div className="flex flex-col items-center space-y-8">
+              <img
+                src="/images/ak-logo.png"
+                alt="AK BUILDERS"
+                className="h-16 w-auto object-contain mb-4"
+              />
+
               {navItems.map((item, i) => (
                 <motion.div
                   key={item.label}

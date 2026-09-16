@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { company } from '../data/siteData'
 
 const initialForm = {
   fullName: '',
@@ -39,21 +40,42 @@ function ContactPage() {
             </h1>
             <p className="text-base text-[#d9d3c8] leading-relaxed mb-8">
               Share your vision, required services, and timeline. Our team will review your
-              request and get back to you with the next steps for your construction project.
+              request and get back to you with the next steps for your construction project in Chennai & Tiruvallur.
             </p>
 
             <div className="space-y-6">
               <div>
+                <p className="text-xs uppercase tracking-[0.2em] text-[#C7A96B] mb-2">Office Address</p>
+                <a
+                  href={company.mapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#FAF7F0] hover:text-[#C7A96B] transition-colors underline-offset-2 hover:underline block leading-relaxed"
+                >
+                  {company.address}
+                </a>
+              </div>
+              <div>
+                <p className="text-xs uppercase tracking-[0.2em] text-[#C7A96B] mb-2">Phone Numbers</p>
+                <div className="flex flex-wrap gap-3">
+                  <a href="tel:+916380224982" className="text-[#FAF7F0] hover:text-[#C7A96B] transition-colors">
+                    +91 63802 24982
+                  </a>
+                  <span className="text-[#77736C]">/</span>
+                  <a href="tel:+919940901290" className="text-[#FAF7F0] hover:text-[#C7A96B] transition-colors">
+                    +91 99409 01290
+                  </a>
+                </div>
+              </div>
+              <div>
                 <p className="text-xs uppercase tracking-[0.2em] text-[#C7A96B] mb-2">Email</p>
-                <p className="text-[#FAF7F0]">hello@akbuilders.com</p>
+                <a href="mailto:hello@akbuilders.com" className="text-[#FAF7F0] hover:text-[#C7A96B] transition-colors">
+                  hello@akbuilders.com
+                </a>
               </div>
               <div>
-                <p className="text-xs uppercase tracking-[0.2em] text-[#C7A96B] mb-2">Phone</p>
-                <p className="text-[#FAF7F0]">+91 98400 12345</p>
-              </div>
-              <div>
-                <p className="text-xs uppercase tracking-[0.2em] text-[#C7A96B] mb-2">Location</p>
-                <p className="text-[#FAF7F0]">Chennai & across Tamil Nadu</p>
+                <p className="text-xs uppercase tracking-[0.2em] text-[#C7A96B] mb-2">Locations Served</p>
+                <p className="text-[#FAF7F0]">Chennai & Tiruvallur</p>
               </div>
             </div>
           </div>
@@ -118,7 +140,7 @@ function ContactPage() {
                       value={formData.phone}
                       onChange={handleChange}
                       required
-                      placeholder="+91 98400 12345"
+                      placeholder="+91 63802 24982"
                       className="w-full rounded-xl border border-[#d7cdb7] bg-white px-4 py-3 text-[#252321] placeholder:text-[#8a857f] focus:border-[#C7A96B] focus:outline-none"
                     />
                   </div>
@@ -140,7 +162,6 @@ function ContactPage() {
                       <option value="Commercial Construction">Commercial Construction</option>
                       <option value="Architecture & Construction">Architecture & Construction</option>
                       <option value="Renovation & Remodeling">Renovation & Remodeling</option>
-                      <option value="Turnkey Construction">Turnkey Construction</option>
                     </select>
                   </div>
                 </div>
@@ -157,7 +178,7 @@ function ContactPage() {
                       value={formData.location}
                       onChange={handleChange}
                       required
-                      placeholder="City / Area"
+                      placeholder="Chennai, Tiruvallur, etc."
                       className="w-full rounded-xl border border-[#d7cdb7] bg-white px-4 py-3 text-[#252321] placeholder:text-[#8a857f] focus:border-[#C7A96B] focus:outline-none"
                     />
                   </div>
@@ -193,7 +214,7 @@ function ContactPage() {
                     type="text"
                     value={formData.timeline}
                     onChange={handleChange}
-                    placeholder="e.g. 3 months"
+                    placeholder="e.g. 6-12 months"
                     className="w-full rounded-xl border border-[#d7cdb7] bg-white px-4 py-3 text-[#252321] placeholder:text-[#8a857f] focus:border-[#C7A96B] focus:outline-none"
                   />
                 </div>
@@ -209,7 +230,7 @@ function ContactPage() {
                     onChange={handleChange}
                     rows="5"
                     required
-                    placeholder="Tell us more about your construction project, goals, and requirements."
+                    placeholder="Tell us more about your construction project, goals, and requirements in Chennai & Tiruvallur."
                     className="w-full rounded-xl border border-[#d7cdb7] bg-white px-4 py-3 text-[#252321] placeholder:text-[#8a857f] focus:border-[#C7A96B] focus:outline-none"
                   />
                 </div>

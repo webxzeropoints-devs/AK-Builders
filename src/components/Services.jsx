@@ -1,14 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { services } from '../data/siteData';
-import { Home, Building2, Compass, Hammer, Key, ArrowRight } from 'lucide-react';
+import { Home, Building2, Compass, Hammer, ArrowRight } from 'lucide-react';
 
 const iconMap = {
   Home,
   Building2,
   Compass,
   Hammer,
-  Key
 };
 
 const Services = () => {
@@ -25,13 +24,13 @@ const Services = () => {
           className="mb-20 max-w-4xl"
         >
           <span className="text-xs uppercase tracking-[0.3em] text-[#C7A96B] block mb-4 font-semibold">
-            SEO-Friendly
+            02 / SERVICES
           </span>
           <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[#252321] mb-6 leading-tight">
             Our Luxury Construction Services
           </h2>
           <p className="text-base lg:text-lg text-[#77736C] max-w-2xl leading-relaxed">
-            As a premium construction company, AK BUILDERS delivers exceptional residential construction, commercial construction, and architectural solutions. Our building contractors and construction services combine precision engineering with luxury home construction to create spaces of lasting value.
+            As a premier construction firm, AK BUILDERS delivers exceptional residential construction, commercial hubs, architectural planning, and transformative renovation services across Chennai & Tiruvallur.
           </p>
         </motion.div>
 
@@ -114,28 +113,6 @@ const Services = () => {
           })}
         </div>
 
-      </div>
-
-      {/* SEO Circle Decoration */}
-      <div className="hidden lg:block absolute right-0 top-40 w-1/3 pointer-events-none opacity-50 z-0">
-        <div className="relative flex items-center justify-end pr-12">
-          <motion.div
-            initial={{ width: 0 }}
-            whileInView={{ width: "100%" }}
-            viewport={{ once: true }}
-            transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
-            className="h-[1px] bg-[#C7A96B] absolute right-[80px] origin-right"
-          />
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, ease: "easeOut", delay: 0.5 }}
-            className="w-[80px] h-[80px] rounded-full border border-[#C7A96B] flex items-center justify-center bg-[#F5F0E6] relative z-10"
-          >
-            <span className="text-[#C7A96B] text-xs font-semibold tracking-widest">SEO</span>
-          </motion.div>
-        </div>
       </div>
     </section>
   );

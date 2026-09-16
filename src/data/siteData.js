@@ -17,15 +17,23 @@ export const company = {
   aboutHeadingLine3: 'CREATING WITH',
   aboutHeadingLine4: 'PRECISION.',
   aboutParagraph:
-    'AK BUILDERS delivers premium construction solutions across Tamil Nadu with a focus on architectural quality, precise execution, thoughtful planning, and lasting results.',
+    'AK BUILDERS delivers premium construction solutions across Chennai & Tiruvallur with a focus on architectural quality, precise execution, thoughtful planning, and lasting results.',
   ctaHeadingLine1: "Let's Build Something",
   ctaHeadingLine2: 'Exceptional.',
   ctaSubheading: 'AK BUILDERS — CONSTRUCTION & ARCHITECTURE',
   ctaParagraph:
     "Have a project in mind? Let's transform your vision into a thoughtfully designed and precisely built space in Tamil Nadu.",
   email: 'hello@akbuilders.com',
-  phone: '+91 98400 12345',
-  address: 'No. 42, Anna Salai, Chennai, Tamil Nadu 600002',
+  phone: '+91 63802 24982 / +91 99409 01290',
+  phones: ['+91 63802 24982', '+91 99409 01290'],
+  phoneRaw: ['6380224982', '9940901290'],
+  location: 'Chennai & Tiruvallur, Tamil Nadu',
+  address: '204, Gundu Malli St, Poonga Nagar, Tiruvallur, Kakkalur, Tamil Nadu 602001',
+  mapsUrl: 'https://www.google.com/maps/search/?api=1&query=204,+Gundu+Malli+St,+Poonga+Nagar,+Tiruvallur,+Kakkalur,+Tamil+Nadu+602001',
+  socials: {
+    youtube: 'https://www.youtube.com/@AKBuildersOfficial',
+    instagram: 'https://www.instagram.com/ak_builders_2020',
+  },
 }
 
 export const projects = [
@@ -92,19 +100,12 @@ export const services = [
       'Thoughtful renovation and remodeling services that transform existing spaces into refined, modern environments.',
     icon: 'Hammer',
   },
-  {
-    number: '05',
-    title: 'Turnkey Construction',
-    description:
-      'Complete turnkey construction solutions from concept to handover, ensuring a seamless and stress-free building experience.',
-    icon: 'Key',
-  },
 ]
 
 export const stats = [
-  { value: 10, suffix: '+', label: 'Years' },
-  { value: 100, suffix: '+', label: 'Projects' },
-  { value: 50, suffix: '+', label: 'Happy Clients' },
+  { value: 2020, label: 'Established', prefix: 'From ' },
+  { value: 40, suffix: '+', label: 'Projects Completed' },
+  { value: 40, suffix: '+', label: 'Happy Clients' },
   { value: 100, suffix: '%', label: 'Commitment' },
 ]
 
