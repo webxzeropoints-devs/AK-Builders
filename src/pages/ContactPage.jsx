@@ -34,7 +34,7 @@ function ContactPage() {
     submission.append('_captcha', 'false')
 
     try {
-      const response = await fetch('https://formsubmit.co/ajax/hello@ak-builders.in', {
+      const response = await fetch('https://formsubmit.co/ajax/akbuilders8989@gmail.com', {
         method: 'POST',
         body: submission,
         headers: {
@@ -95,8 +95,8 @@ function ContactPage() {
               </div>
               <div>
                 <p className="text-xs uppercase tracking-[0.2em] text-[#C7A96B] mb-2">Email</p>
-                <a href="mailto:hello@ak-builders.in" className="text-[#FAF7F0] hover:text-[#C7A96B] transition-colors">
-                  hello@ak-builders.in
+                <a href="mailto:akbuilders8989@gmail.com" className="text-[#FAF7F0] hover:text-[#C7A96B] transition-colors">
+                  akbuilders8989@gmail.com
                 </a>
               </div>
               <div>

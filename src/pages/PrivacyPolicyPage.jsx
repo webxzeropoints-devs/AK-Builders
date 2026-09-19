@@ -155,8 +155,8 @@ const sections = [
           <p className="text-sm text-[#252321] font-medium">AK BUILDERS — Privacy & Legal Team</p>
           <p className="text-sm text-[#524E48] flex items-center gap-2">
             <Mail className="w-4 h-4 text-[#C7A96B]" />
-            <a href="mailto:hello@ak-builders.in" className="hover:text-[#C7A96B] transition-colors underline">
-              hello@ak-builders.in
+            <a href="mailto:akbuilders8989@gmail.com" className="hover:text-[#C7A96B] transition-colors underline">
+              akbuilders8989@gmail.com
             </a>
           </p>
           <p className="text-sm text-[#524E48] flex items-center gap-2">

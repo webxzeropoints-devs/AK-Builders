@@ -70,6 +70,7 @@ export default function QuotePage() {
   const [formData, setFormData] = useState(initialFormData);
   const [submitted, setSubmitted] = useState(false);
   const [quoteId, setQuoteId] = useState('');
+  const [submitError, setSubmitError] = useState('');
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -80,16 +81,43 @@ export default function QuotePage() {
     setFormData((prev) => ({ ...prev, projectType: type }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const generatedId = `AK-QT-${Math.floor(100000 + Math.random() * 900000)}`;
-    setQuoteId(generatedId);
-    setSubmitted(true);
+    setSubmitError('');
+
+    const submission = new FormData();
+    Object.entries(formData).forEach(([key, value]) => {
+      submission.append(key, value);
+    });
+    submission.append('_subject', `New quote request for ${formData.projectType}`);
+    submission.append('_template', 'table');
+    submission.append('_captcha', 'false');
+
+    try {
+      const response = await fetch('https://formsubmit.co/ajax/akbuilders8989@gmail.com', {
+        method: 'POST',
+        body: submission,
+        headers: {
+          Accept: 'application/json',
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error('Submission failed');
+      }
+
+      const generatedId = `AK-QT-${Math.floor(100000 + Math.random() * 900000)}`;
+      setQuoteId(generatedId);
+      setSubmitted(true);
+    } catch {
+      setSubmitError('We could not send your quote request. Please try again or contact us directly by email.');
+    }
   };
 
   const handleReset = () => {
     setFormData(initialFormData);
     setSubmitted(false);
+    setSubmitError('');
   };
 
   return (
@@ -481,6 +509,12 @@ export default function QuotePage() {
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </button>
                 </div>
+
+                {submitError && (
+                  <p className="text-sm text-red-600 bg-red-50 border border-red-200 rounded-xl px-4 py-3">
+                    {submitError}
+                  </p>
+                )}
               </form>
             </div>
 
@@ -561,11 +595,11 @@ export default function QuotePage() {
                 <div className="pt-4 border-t border-[#E5DAC8] text-xs space-y-2 text-[#77736C]">
                   <p className="flex items-center gap-2">
                     <Mail className="w-3.5 h-3.5 text-[#C7A96B]" />
-                    <span>hello@ak-builders.in</span>
+                    <span>akbuilders8989@gmail.com</span>
                   </p>
                   <p className="flex items-center gap-2">
                     <Phone className="w-3.5 h-3.5 text-[#C7A96B]" />
-                    <span>+1 (555) 123-4567</span>
+                    <span>+91 63802 24982 / +91 99409 01290</span>
                   </p>
                 </div>
               </div>

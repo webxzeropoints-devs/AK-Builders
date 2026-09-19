@@ -5,14 +5,14 @@ import ArchitecturalDecor from './ArchitecturalDecor';
 
 const About = () => {
   return (
-    <section id="company" className="relative bg-[#F5F0E6] py-24 lg:py-32 overflow-hidden">
+    <section id="company" className="relative bg-[#F5F0E6] pt-12 pb-0 sm:pt-16 lg:py-32 overflow-hidden">
       <ArchitecturalDecor variant="cream" />
       
       <div className="container mx-auto px-6 lg:px-12 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-8 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-0 lg:gap-8 items-center">
           
           {/* Left Column */}
-          <div className="lg:col-span-5 lg:col-start-2 flex flex-col justify-center space-y-8">
+          <div className="lg:col-span-5 lg:col-start-2 flex flex-col justify-center space-y-5 sm:space-y-8">
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -52,7 +52,7 @@ const About = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.8, delay: 0.45 }}
-              className="flex flex-wrap gap-4 pt-4"
+              className="flex flex-wrap gap-4 pt-0 sm:pt-4"
             >
               <motion.div whileHover="hover">
                 <Link
@@ -79,7 +79,7 @@ const About = () => {
           </div>
 
           {/* Right Column */}
-          <div className="lg:col-span-5 lg:col-start-8 relative">
+          <div className="lg:col-span-5 lg:col-start-8 relative -mt-8 sm:mt-0">
             <motion.div
               initial={{ height: 0 }}
               whileInView={{ height: '100%' }}
@@ -93,7 +93,7 @@ const About = () => {
               whileInView={{ clipPath: 'inset(0% 0 0 0)' }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 1, delay: 0.2, ease: [0.25, 0.1, 0.25, 1] }}
-              className="relative h-[500px] lg:h-[600px] w-full overflow-hidden shadow-2xl z-10"
+              className="relative h-[380px] sm:h-[500px] lg:h-[600px] w-full overflow-hidden shadow-2xl z-10"
               style={{ borderRadius: '50% 50% 4% 4%' }}
             >
               <motion.img

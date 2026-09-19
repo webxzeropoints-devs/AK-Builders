@@ -23,7 +23,7 @@ export const company = {
   ctaSubheading: 'AK BUILDERS — CONSTRUCTION & ARCHITECTURE',
   ctaParagraph:
     "Have a project in mind? Let's transform your vision into a thoughtfully designed and precisely built space in Tamil Nadu.",
-  email: 'hello@ak-builders.in',
+  email: 'akbuilders8989@gmail.com',
   phone: '+91 63802 24982 / +91 99409 01290',
   phones: ['+91 63802 24982', '+91 99409 01290'],
   phoneRaw: ['6380224982', '9940901290'],
