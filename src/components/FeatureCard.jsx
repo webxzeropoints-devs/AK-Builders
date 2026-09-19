@@ -17,6 +17,7 @@ const FeatureCard = ({
   badgeTitle = "Tiruvallur & Suburbs",
   badgeSubtitle = "Quality Construction & Timely Handover",
   icons = ['building', 'check'],
+  badgeImage = '',
   comment = "We were looking for a reliable builder for our new home in Tiruvallur and chose AK Builders after discussing our requirements with them. The team was very patient during the planning stage and helped us understand the different construction requirements. The work progressed systematically, and they kept us updated about the project. We particularly appreciated their professionalism and attention to detail.",
   author = "Suresh & Family",
   location = "New Home, Tiruvallur",
@@ -51,7 +52,16 @@ const FeatureCard = ({
             <div className="flex-1 flex flex-col md:flex-row items-center md:items-start gap-4 text-center md:text-left">
               <div className="flex -space-x-2">
                 <div className="w-10 h-10 rounded-full bg-[#F5F0E6] flex items-center justify-center border border-[#DED4C1] shadow-sm">
-                  <Icon1 size={18} className="text-[#C7A96B]" />
+                  {badgeImage ? (
+                    <img
+                      src={badgeImage}
+                      alt=""
+                      aria-hidden="true"
+                      className="w-full h-full rounded-full object-contain p-1.5"
+                    />
+                  ) : (
+                    <Icon1 size={18} className="text-[#C7A96B]" />
+                  )}
                 </div>
                 <div className="w-10 h-10 rounded-full bg-[#F5F0E6] flex items-center justify-center border border-[#DED4C1] shadow-sm">
                   <Icon2 size={18} className="text-[#C7A96B]" />

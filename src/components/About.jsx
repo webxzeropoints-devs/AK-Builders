@@ -93,17 +93,17 @@ const About = () => {
               whileInView={{ clipPath: 'inset(0% 0 0 0)' }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 1, delay: 0.2, ease: [0.25, 0.1, 0.25, 1] }}
-              className="relative h-[380px] sm:h-[500px] lg:h-[600px] w-full overflow-hidden shadow-2xl z-10"
-              style={{ borderRadius: '50% 50% 4% 4%' }}
+              className="relative h-[380px] sm:h-[500px] lg:h-[600px] w-full overflow-hidden shadow-2xl z-10 flex items-center justify-center bg-[#171716]"
+              style={{ borderRadius: '2rem' }}
             >
               <motion.img
                 initial={{ scale: 1.06 }}
                 whileInView={{ scale: 1 }}
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 1.2, delay: 0.2, ease: 'easeOut' }}
-                src="/images/about_tamilnadu_home.jpg"
-                alt="Contemporary luxury home construction in Tamil Nadu by AK BUILDERS"
-                className="w-full h-full object-cover"
+                src="/images/company-ak-logo.png"
+                alt="AK BUILDERS logo"
+                className="w-full h-full object-contain p-6 sm:p-10"
               />
             </motion.div>
           </div>
